@@ -14,12 +14,13 @@ $(document).ready(function() {
 					'</div>'+
 				'</div>'+
 			'</div>');
-		$('.modulWindow').fadeIn("slow");
+		$('#bgAndModulWindow').fadeIn(600);
 		$('#bgAndModulWindow').click( function(e){
 			e.preventDefault(); 
 			if (e.target.tagName !== 'DIV') return false;
-			$("#bgAndModulWindow").remove();
-			$('body').removeClass('scrollOff');
+			$('#bgAndModulWindow').fadeOut(600);
+			setTimeout( '$("#bgAndModulWindow").remove();', 600);
+			$("body").removeClass("scrollOff");
 		});	
 	});
 });

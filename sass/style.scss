@@ -20,6 +20,7 @@
 	cursor: pointer;
 	font-family: Arial;
 	overflow: auto;
+	display: none;
 	.wrapperModalWindow{
 		display: table;
 		height: 100%;
@@ -46,7 +47,6 @@
 				-webkit-box-shadow: 0 0 50px black;
 				-moz-box-shadow: 0 0 50px black;
 				box-shadow: 0 0 50px black;
-				display: none;
 				h5{
 					font-size: 18px;
 					font-weight: bold;
